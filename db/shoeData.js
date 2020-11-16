@@ -723,13 +723,13 @@ let data = [
   }
 ];
 
-addToCart.create(data)
-  .then((results) => {
-    console.log('seeded succesful');
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// addToCart.create(data)
+//   .then((results) => {
+//     console.log('seeded succesful');
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 
 // addToCart.remove({})

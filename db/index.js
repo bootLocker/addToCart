@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+mongoose.Promise = global.Promise;
+
 mongoose.connect('mongodb://localhost:/addToCart', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('connected to mongoose');
