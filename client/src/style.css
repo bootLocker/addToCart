@@ -1,0 +1,316 @@
+/* body {
+
+    max-width: 150px;
+} */
+
+
+#mainComponentDiv {
+  background: white;
+  border: 1px solid #dddddd;
+  width: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 3%;
+  /* margin-bottom: 10%; */
+  box-sizing: border-box;
+}
+
+
+#leftPortion {
+  /* position: relative;
+  display: flex;
+  align-items: left; */
+}
+
+#rightPortion {
+  /* display: flex;
+  margin-right: auto; */
+  /* position: relative;
+  display: flex;
+  align-items: right; */
+}
+
+.home {
+  display: inline-block;
+  line-height: 1.75;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 14px!important;
+  color: #036ad8;
+  font-weight: bold;
+}
+
+.home:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.currently {
+  display: inline-block;
+  line-height: 1.75;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 14px!important;
+  font-weight: bold;
+}
+
+.mainShoeDiv {
+  line-height: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 2%;
+}
+
+.mainShoeImg {
+  display: flex;
+  align-items: center;
+}
+
+.indivAltMainShoeImg {
+  line-height: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 2%;
+  display: inline-flex;
+}
+
+.shoeName {
+  display: flex;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  text-transform: none;
+  color: #0e1111;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+}
+
+/* h1 {
+  font-size: 2em;
+} */
+
+#gender {
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  margin-top: 0.95rem;
+  color: #515151;
+}
+
+#shoeName, #gender {
+  display: block;
+  line-height: 1;
+}
+
+#ratings {
+  color: #036ad8;
+  font-family: "Roboto","Arial",sans-serif!important;
+  font-size: 14px!important;
+}
+
+.reviewAndInfo {
+text-decoration: none; color: #036ad8;
+}
+
+.reviewAndInfo:hover{
+text-decoration: underline;
+}
+
+#otherColorwaysImgs {
+  display: inline-flex;
+  /* add inline wrap */
+}
+
+.otherShoes {
+  line-height: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 2%;
+}
+
+
+
+
+#otherColorwaysImgs:hover{
+  cursor: pointer;
+}
+
+/* trigger this somehow? */
+/* #otherColorwaysImgs:after {
+  background: #e71836;
+} */
+
+#altText {
+  color: #757575;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+}
+
+.price {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  color: #0e1111;
+}
+
+.sizeChart {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  text-decoration: none; color: #036ad8;
+}
+
+.sizeChart:hover{
+  text-decoration: underline;
+  }
+
+.makePayments {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  color: #0e1111;
+}
+
+.learnMore {
+  text-decoration: underline;
+}
+
+/* #shoeSizes{
+  display: flex;
+  flex-direction: row;
+} */
+
+.size {
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: absolute;
+    padding: 0;
+    width: 5%;
+    height: 5%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background: whitesmoke;
+    border-radius: 0;
+    border: 1px solid whitesmoke;
+    padding: 0.5rem 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: 1%;
+    margin-top: 1%
+}
+
+/* #flxPromo {
+  line-height: 1.75;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 14px!important;
+} */
+
+.flxLogo {
+  width: 5%;
+  height: 5%;
+}
+
+.freeShipping {
+  line-height: 1.75;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 14px!important;
+}
+
+.learnMore {
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #036ad8;
+  text-decoration: none;
+}
+
+
+.addToCartBtn {
+  margin: 0;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    line-height: 1;
+    padding: 0.875rem 1.25rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: box-shadow 0.25s;
+    color: white;
+    background-color: #0e1111;
+    border-color: #0e1111;
+    font: 700 0.875rem/1.33333 Roboto, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fitAlert {
+  color: #757575;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+}
+
+#findStorePickup {
+  /* width: 300px; */
+  border: 1px solid #dddddd;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.mapLogo {
+  width: 5%;
+  height: 10%;
+}
+
+.pickUp {
+  font: 700 0.875rem/1.33333 Roboto, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.findStore {
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  color: #036ad8;
+  /* float: center; */
+}
+
+.pickStore {
+  padding-left: 10px;
+}
+
+.findStore:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
