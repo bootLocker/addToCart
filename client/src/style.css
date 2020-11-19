@@ -1,50 +1,49 @@
-/* body {
+body {
+  padding: 0;
+  margin: 0;
+}
 
-    max-width: 150px;
-} */
 
 
-#mainComponentDiv {
+
+.mainComponentDiv {
+  max-width: 87%;
   background: white;
   border: 1px solid #dddddd;
-  width: auto;
-  height: auto;
   margin-bottom: 1rem;
   display: flex;
-  flex-direction: row;
   padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 1%;
+  /* padding-right: 1%; */
+  /* padding-top: 1%; */
   padding-bottom: 1%;
   margin-right: 5%;
   margin-left: 5%;
-  margin-top: 3%;
+  margin-top: 1%;
   /* margin-bottom: 10%; */
   box-sizing: border-box;
 }
 
 
-#leftPortion {
-  /* position: relative;
+/* #leftPortion {
+ position: relative;
   display: flex;
-  align-items: left; */
-}
+} */
 
 #rightPortion {
-  /* display: flex;
-  margin-right: auto; */
-  /* position: relative;
-  display: flex;
-  align-items: right; */
+  position: relative;
+  margin-left: 13%;
+  margin-top: -10px;
 }
+
 
 .home {
   display: inline-block;
   line-height: 1.75;
   font: 1rem/1.5 Roboto, Arial, sans-serif;
-  font-size: 14px!important;
+  font-size: 12px!important;
   color: #036ad8;
   font-weight: bold;
+  padding-left: 5%;
 }
 
 .home:hover {
@@ -56,67 +55,96 @@
   display: inline-block;
   line-height: 1.75;
   font: 1rem/1.5 Roboto, Arial, sans-serif;
-  font-size: 14px!important;
+  font-size: 12px!important;
   font-weight: bold;
 }
 
 .mainShoeDiv {
-  line-height: 0;
-  padding: 0.5rem 0;
+  /* line-height: 0; */
+  /* padding: 0.5rem 0; */
   position: relative;
   background: whitesmoke;
   border-radius: 0;
   border: 1px solid whitesmoke;
   z-index: auto;
-  margin-right: 2%;
+  width: 120%;
+  height: 10%;
+  height: 65%;
+  /* padding: 8px; */
+  margin-bottom: 1%;
+  padding-bottom: 10%;
+  margin-top: 2%;
 }
 
 .mainShoeImg {
-  display: flex;
-  align-items: center;
+  padding-left: 10%;
+}
+
+
+.mainShoeAlternateImgs {
+  display: inline;
+  position: relative;
 }
 
 .indivAltMainShoeImg {
   line-height: 0;
-  padding: 0.5rem 0;
+  padding: 10px;
   position: relative;
   background: whitesmoke;
   border-radius: 0;
   border: 1px solid whitesmoke;
   z-index: auto;
-  margin-right: 2%;
+  margin-right: 1%;
+  /* margin-left: -5px; */
   display: inline-flex;
 }
 
+.indivAltMainShoeImg:hover{
+  cursor: pointer;
+  border: 1px solid #dddddd;
+}
+
+
 .shoeName {
   display: flex;
-  font: 1rem/1.5 Roboto, Arial, sans-serif;
-  text-transform: none;
-  color: #0e1111;
-  font-weight: bold;
+  font: 900 1rem/1.1 Roboto, Arial, sans-serif;
+  font-weight: 900;
   display: block;
   line-height: 1;
 }
 
-/* h1 {
-  font-size: 2em;
-} */
-
 #gender {
+  padding-top: -40px;
   font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
-  margin-top: 0.95rem;
   color: #515151;
 }
 
-#shoeName, #gender {
-  display: block;
-  line-height: 1;
-}
 
 #ratings {
   color: #036ad8;
   font-family: "Roboto","Arial",sans-serif!important;
   font-size: 14px!important;
+  margin-top: 6%;
+}
+
+.starz {
+  text-decoration-color: #515151;
+  color: #515151;
+  filter: grayscale(100%);
+  /* opacity: .3; */
+}
+
+.starz:hover {
+  cursor: pointer;
+}
+
+.ratingPercentage {
+color: #036ad8;
+}
+
+.ratingPercentage:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .reviewAndInfo {
@@ -128,11 +156,11 @@ text-decoration: underline;
 }
 
 #otherColorwaysImgs {
-  display: inline-flex;
-  /* add inline wrap */
+  /* display: inline-flex;
+  add inline wrap */
 }
 
-.otherShoes {
+.otherShoesBackground {
   line-height: 0;
   padding: 0.5rem 0;
   position: relative;
@@ -141,14 +169,22 @@ text-decoration: underline;
   border: 1px solid whitesmoke;
   z-index: auto;
   margin-right: 2%;
+  display: inline-flex;
+  flex-shrink: 2;
+  margin-top: 4%;
 }
 
-
-
-
-#otherColorwaysImgs:hover{
+.otherShoesBackground:hover {
   cursor: pointer;
+  border: 1px solid #dddddd;
 }
+
+.otherShoesImage{
+  width: 90px;
+  height: 87px;
+  padding: 5px;
+}
+
 
 /* trigger this somehow? */
 /* #otherColorwaysImgs:after {
@@ -166,13 +202,15 @@ text-decoration: underline;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
-  color: #0e1111;
+  font-size: 15px;
+  color: #383838;
 }
 
 .sizeChart {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  font-size: 15px;
   text-decoration: none; color: #036ad8;
 }
 
@@ -184,7 +222,7 @@ text-decoration: underline;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
-  color: #0e1111;
+  color: #383838;
 }
 
 .learnMore {
@@ -202,8 +240,8 @@ text-decoration: underline;
     letter-spacing: 0.5px;
     position: absolute;
     padding: 0;
-    width: 5%;
-    height: 5%;
+    width: 10%;
+    /* height: 5%; */
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -215,25 +253,33 @@ text-decoration: underline;
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
-    margin-right: 1%;
-    margin-top: 1%
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
-/* #flxPromo {
-  line-height: 1.75;
-  font: 1rem/1.5 Roboto, Arial, sans-serif;
-  font-size: 14px!important;
-} */
+.size:hover{
+  background-color: #515151;
+  color: white;
+}
+
+#flxPromo {
+  display: flex;
+  padding-top: 7%;
+  padding-bottom: 6%;
+}
 
 .flxLogo {
-  width: 5%;
-  height: 5%;
+  width: 12%;
+  height: 12%;
+  padding-right: 2%;
+  padding-top: 2%;
 }
 
 .freeShipping {
   line-height: 1.75;
   font: 1rem/1.5 Roboto, Arial, sans-serif;
   font-size: 14px!important;
+  margin-top: -10px;
 }
 
 .learnMore {
@@ -243,6 +289,13 @@ text-decoration: underline;
   letter-spacing: 0.025em;
   color: #036ad8;
   text-decoration: none;
+  align-content: flex-start;
+
+}
+
+.learnMore:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 
@@ -270,27 +323,36 @@ text-decoration: underline;
     font: 700 0.875rem/1.33333 Roboto, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    width: 97%;
+    margin-bottom: 4%;
+}
+
+.addToCartBtn:hover {
+background-color: #757575;
 }
 
 .fitAlert {
+  display: flex;
+  flex-wrap: wrap;
   color: #757575;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
   font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  padding-right: 1%;
 }
 
 #findStorePickup {
-  /* width: 300px; */
+  width: 97%;
   border: 1px solid #dddddd;
   padding: 0;
   margin: 0;
   display: flex;
-  /* flex-wrap: wrap; */
+  margin-bottom: 3%;
 }
 
 .mapLogo {
-  width: 5%;
-  height: 10%;
+  width: 12%;
+  height: 100%;
 }
 
 .pickUp {
@@ -303,7 +365,6 @@ text-decoration: underline;
   font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
   letter-spacing: 0.5px;
   color: #036ad8;
-  /* float: center; */
 }
 
 .pickStore {
@@ -313,4 +374,10 @@ text-decoration: underline;
 .findStore:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.learnMorePayments {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0e1111;
 }
