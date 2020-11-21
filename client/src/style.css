@@ -155,11 +155,6 @@ text-decoration: none; color: #036ad8;
 text-decoration: underline;
 }
 
-#otherColorwaysImgs {
-  /* display: inline-flex;
-  add inline wrap */
-}
-
 .otherShoesBackground {
   line-height: 0;
   padding: 0.5rem 0;
@@ -172,11 +167,36 @@ text-decoration: underline;
   display: inline-flex;
   flex-shrink: 2;
   margin-top: 4%;
+  width: 90px;
+  height: 87px;
+  padding: 5px;
+}
+
+.otherShoesBackgroundClicked {
+  line-height: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 2%;
+  display: inline-flex;
+  flex-shrink: 2;
+  margin-top: 4%;
+  /* background-color: red; */
+  border-bottom: solid red;
+  width: 90px;
+  height: 87px;
+  padding: 5px;
 }
 
 .otherShoesBackground:hover {
   cursor: pointer;
-  border: 1px solid #dddddd;
+}
+
+.otherShoesBackgroundClicked:hover {
+  cursor: pointer;
 }
 
 .otherShoesImage{
@@ -184,6 +204,13 @@ text-decoration: underline;
   height: 87px;
   padding: 5px;
 }
+
+.otherShoesImageClicked{
+  width: 90px;
+  height: 87px;
+  padding: 5px;
+}
+
 
 
 /* trigger this somehow? */

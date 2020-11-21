@@ -3,9 +3,8 @@ const shoeDisplay = require('../db/model.js');
 
 const controller = {
   getOneShoe: (req, res) => {
-    console.log(req.params);
-    var sku = req.params.sku;
-    shoeDisplay.getOne({ 'SKU': sku })
+    var _id = req.params._id;
+    shoeDisplay.getOne({ '_id': _id })
       .then((results) => {
         res.status(200).send(results);
       })

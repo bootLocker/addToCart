@@ -9,9 +9,10 @@ router
 
 
 router
-  .route('/:sku')
+  .route('/:_id')
   // console.log('hello from router')
   .get(controller.getOneShoe);
 
 
 module.exports = router;
+
