@@ -57,9 +57,9 @@ class Home extends React.Component {
           <div className='mainComponentDiv'>
             <MainShoe oneShoeData={this.state.oneShoeData} />
 
-            {/* <div id='rightPortion'>
+            <div id='rightPortion'>
               <NameAndRating oneShoeData={this.state.oneShoeData} />
-              <Colorways getShoe={this.getShoe} shoeData={this.state.shoeData} />
+              <Colorways getShoe={this.getShoe} shoeData={this.state.shoeData}/>
               <Details oneShoeData={this.state.oneShoeData} />
               <ShoeSizes shoeData={this.state.shoeData} />
               <Promo />
@@ -68,7 +68,7 @@ class Home extends React.Component {
                 <button className="addToCartBtn"> Add To Cart </button>
               </div>
               <FindStore />
-            </div> */}
+            </div>
           </div>
         </div>
       );
