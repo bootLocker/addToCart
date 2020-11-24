@@ -10,20 +10,46 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "connect": "nodemon db/index.js",
+<<<<<<< HEAD
     "seed": "nodemon db/shoeData.js"
+=======
+    "seed": "nodemon db/shoeData.js",
+    "build": "webpack --config webpack.config.js --watch"
+>>>>>>> solo
   },
   "dependencies": {
     "axios": "^0.21.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+<<<<<<< HEAD
     "mongoose": "^5.10.13",
+=======
+    "mongoose": "^5.10.14",
+>>>>>>> solo
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "puppeteer": "^5.4.1",
     "react": "^17.0.1",
+<<<<<<< HEAD
     "react-dom": "^17.0.1"
+=======
+    "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
+    "react-image-file-resizer": "^0.3.8",
+    "react-stars": "^2.2.5",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.2.1"
+>>>>>>> solo
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
   }
 }

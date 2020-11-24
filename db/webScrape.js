@@ -46,5 +46,9 @@ const puppeteer = require('puppeteer');
 
 
   await browser.close();
+<<<<<<< HEAD
 })();
 
+=======
+})();
+>>>>>>> solo
