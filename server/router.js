@@ -4,12 +4,12 @@ const controller = require('./controller.js');
 
 
 router
-  .route('/')
+  .route('/products')
   .get(controller.getAllShoes);
 
 
 router
-  .route('/:_id')
+  .route('/products/:_id')
   // console.log('hello from router')
   .get(controller.getOneShoe);
 

@@ -33,7 +33,7 @@ class Colorways extends React.Component {
   }
 
   get() {
-    axios.get(`/products/${this.state._id}`)
+    axios.get(`api/products/${this.state._id}`)
       .then((results) => {
         this.setState({
           newShoe: results.data

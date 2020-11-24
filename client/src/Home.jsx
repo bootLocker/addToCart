@@ -28,7 +28,7 @@ class Home extends React.Component {
   }
 
   getData() {
-    axios.get('/products/')
+    axios.get('/api/products/')
       .then((results) => {
         this.setState({
           shoeData: results.data
@@ -51,7 +51,7 @@ class Home extends React.Component {
   render() {
     if (this.state.oneShoeData && this.state.oneShoeData.length > 0) {
       return (
-        <div id='headDiv' className='test'>
+        <div id='headDiv'>
           <Currently oneShoeData={this.state.oneShoeData} />
 
           <div className='mainComponentDiv'>

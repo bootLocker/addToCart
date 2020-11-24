@@ -23,8 +23,10 @@
     "puppeteer": "^5.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
     "react-image-file-resizer": "^0.3.8",
     "react-stars": "^2.2.5",
+    "react-transition-group": "^4.4.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
