@@ -1,0 +1,412 @@
+
+
+.mainComponentDiv {
+  max-width: 87%;
+  background: white;
+  border: 1px solid #dddddd;
+  margin-bottom: 1rem;
+  display: flex;
+  padding-left: 1%;
+  /* padding-right: 1%; */
+  /* padding-top: 1%; */
+  padding-bottom: 1%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1%;
+  /* margin-bottom: 10%; */
+  box-sizing: border-box;
+}
+
+
+/* #leftPortion {
+ position: relative;
+  display: flex;
+} */
+
+#rightPortion {
+  position: relative;
+  margin-left: 12%;
+  margin-top: -10px;
+}
+
+
+.home1 {
+  display: inline-block;
+  line-height: 1.75;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 12px!important;
+  color: #036ad8;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+.home1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.currently {
+  display: inline-block;
+  line-height: 1.75;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 12px!important;
+  font-weight: bold;
+}
+
+.mainShoeDiv {
+  /* line-height: 0; */
+  /* padding: 0.5rem 0; */
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  width: 120%;
+  height: 10%;
+  height: 65%;
+  /* padding: 8px; */
+  margin-bottom: 1%;
+  padding-bottom: 10%;
+  margin-top: 2%;
+}
+
+.mainShoeImg {
+  padding-left: 10%;
+}
+
+
+.mainShoeAlternateImgs {
+  display: inline;
+  position: relative;
+}
+
+.indivAltMainShoeImg {
+  line-height: 0;
+  padding: 10px;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 1%;
+  /* margin-left: -5px; */
+  display: inline-flex;
+}
+
+
+
+.indivAltMainShoeImg:hover{
+  cursor: pointer;
+  border: 1px solid #dddddd;
+}
+
+
+.shoeName1 {
+  display: flex;
+  font: 1rem/2.0 Roboto, Arial, sans-serif;
+  font-weight: 2000;
+  display: block;
+  line-height: 1;
+}
+
+#gender1 {
+  /* padding-top: -50px; */
+  margin-top: -15px;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  color: #515151;
+}
+
+
+#ratings1 {
+  color: #036ad8;
+  font-family: "Roboto","Arial",sans-serif!important;
+  font-size: 14px!important;
+  margin-top: 6%;
+}
+
+.starz1 {
+  text-decoration-color: #515151;
+  color: #515151;
+  filter: grayscale(100%);
+  /* opacity: .3; */
+}
+
+.starz1:hover {
+  cursor: pointer;
+}
+
+.ratingPercentage1 {
+color: #036ad8;
+}
+
+.ratingPercentage1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.reviewAndInfo {
+text-decoration: none; color: #036ad8;
+}
+
+.reviewAndInfo:hover{
+text-decoration: underline;
+}
+
+.otherShoesBackground {
+  line-height: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 2%;
+  display: inline-flex;
+  flex-shrink: 2;
+  margin-top: 4%;
+  width: 90px;
+  height: 87px;
+  padding: 5px;
+}
+
+.otherShoesBackgroundClicked {
+  line-height: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 2%;
+  display: inline-flex;
+  flex-shrink: 2;
+  margin-top: 4%;
+  /* background-color: red; */
+  border-bottom: solid red;
+  width: 90px;
+  height: 87px;
+  padding: 5px;
+}
+
+
+.otherShoesBackground:hover {
+  cursor: pointer;
+  border: 1px solid #dddddd;
+}
+
+
+.otherShoesBackgroundClicked:hover {
+  cursor: pointer;
+}
+
+.otherShoesImage{
+  width: 90px;
+  height: 87px;
+  padding: 5px;
+}
+
+.otherShoesImageClicked{
+  width: 90px;
+  height: 87px;
+  padding: 5px;
+}
+
+
+
+/* trigger this somehow? */
+/* #otherColorwaysImgs:after {
+  background: #e71836;
+} */
+
+#altText {
+  color: #757575;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+}
+
+.price {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #383838;
+}
+
+.sizeChart {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 5%;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  font-size: 15px;
+  text-decoration: none; color: #036ad8;
+}
+
+
+.sizeChart:hover{
+  text-decoration: underline;
+  }
+
+.makePayments {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  color: #383838;
+}
+
+.learnMore {
+  text-decoration: underline;
+}
+
+/* #shoeSizes{
+  display: flex;
+  flex-direction: row;
+} */
+
+.size {
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: absolute;
+    padding: 0;
+    width: 10%;
+    /* height: 5%; */
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background: whitesmoke;
+    border-radius: 0;
+    border: 1px solid whitesmoke;
+    padding: 0.5rem 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.size:hover{
+  background-color: #515151;
+  color: white;
+}
+
+#flxPromo {
+  display: flex;
+  padding-top: 7%;
+  padding-bottom: 6%;
+}
+
+.flxLogo {
+  width: 12%;
+  height: 12%;
+  padding-right: 2%;
+  padding-top: 2%;
+}
+
+.freeShipping {
+  line-height: 1.75;
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 14px!important;
+  margin-top: -10px;
+}
+
+.learnMore {
+  font: 1rem/1.5 Roboto, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #036ad8;
+  text-decoration: none;
+  align-content: flex-start;
+
+}
+
+.learnMore:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.addToCartBtn {
+  margin: 0;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    line-height: 1;
+    padding: 0.875rem 1.25rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: box-shadow 0.25s;
+    color: white;
+    background-color: #0e1111;
+    border-color: #0e1111;
+    font: 700 0.875rem/1.33333 Roboto, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 97%;
+    margin-bottom: 4%;
+}
+
+.addToCartBtn:hover {
+background-color: #757575;
+}
+
+.fitAlert {
+  display: flex;
+  flex-wrap: wrap;
+  color: #757575;
+  /* margin-top: 1rem; */
+  margin-bottom: 1rem;
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  padding-right: 1%;
+}
+
+#findStorePickup {
+  width: 97%;
+  border: 1px solid #dddddd;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.mapLogo {
+  width: 12%;
+  height: 100%;
+}
+
+.pickUp {
+  font: 700 0.875rem/1.33333 Roboto, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.findStore {
+  font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  color: #036ad8;
+}
+
+.pickStore {
+  padding-left: 10px;
+}
+
+.findStore:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.learnMorePayments {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0e1111;
+}
