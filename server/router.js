@@ -2,11 +2,6 @@ const router = require('express').Router();
 const controller = require('./controller.js');
 
 
-<<<<<<< HEAD
-router
-  .route('/shoeName/sku')
-  .get(controller.get) // get all data on page
-=======
 
 router
   .route('/products')
@@ -21,4 +16,3 @@ router
 
 module.exports = router;
 
->>>>>>> solo
