@@ -8,9 +8,9 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "npm run seed && nodemon server/index.js",
     "connect": "nodemon db/index.js",
-    "seed": "nodemon db/shoeData.js",
+    "seed": "node db/shoeData.js",
     "build": "webpack --config webpack.config.js --watch"
   },
   "dependencies": {
