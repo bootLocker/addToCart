@@ -739,20 +739,20 @@ let data = [
 //   }
 // ];
 
-addToCart.create(data)
+addToCart.remove({})
   .then((results) => {
     console.log('seeded succesful');
-    mongoose.connection.close();
-  })
+  }).then(
+    () => {
+      addToCart.create(data)
+        .then((results) => {
+          console.log('seeded succesful');
+          mongoose.connection.close();
+        });
+    }
+  )
   .catch((err) => {
     console.log(err);
   });
 
 
-// addToCart.remove({})
-//   .then((results) => {
-//     console.log('seeded succesful');
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });

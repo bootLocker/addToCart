@@ -20,15 +20,15 @@ class MainShoe extends React.Component {
     // console.log(typeof e.currentTarget.id);
     let image = '';
     if (e.currentTarget.id === '0') {
-      image = this.props.shoeData[0].currentShoeBigPictures[0];
+      image = this.props.shoeData[0].currentshoebigpictures[0];//uncapitalized
     } else if (e.currentTarget.id === '1') {
-      image = this.props.shoeData[0].currentShoeBigPictures[1];
+      image = this.props.shoeData[0].currentshoebigpictures[1];//uncapitalized
     } else if (e.currentTarget.id === '2') {
-      image = this.props.shoeData[0].currentShoeBigPictures[2];
+      image = this.props.shoeData[0].currentshoebigpictures[2];//uncapitalized
     } else if (e.currentTarget.id === '3') {
-      image = this.props.shoeData[0].currentShoeBigPictures[3];
+      image = this.props.shoeData[0].currentshoebigpictures[3];//uncapitalized
     } else {
-      image = this.props.shoeData[0].currentShoeBigPictures[4];
+      image = this.props.shoeData[0].currentshoebigpictures[4];//uncapitalized
     }
     // console.log(image);
 
@@ -43,9 +43,9 @@ class MainShoe extends React.Component {
     console.log(e.currentTarget.id);
     let image = '';
     if (e.currentTarget.id === '0') {
-      image = this.props.oneShoeData[0].currentShoeBigPictures[0];
+      image = this.props.oneShoeData[0].currentshoebigpictures[0];
     } else {
-      image = this.props.oneShoeData[0].currentShoeBigPictures[1];
+      image = this.props.oneShoeData[0].currentshoebigpictures[1];
     }
     this.setState({
       soloClickedImage: image
@@ -67,7 +67,7 @@ class MainShoe extends React.Component {
             </div>
           </div>
           <div className="mainShoeAlternateImgs">
-            {this.props.oneShoeData[0].currentShoeSmallPictures.map((shoe, index) => {
+            {this.props.oneShoeData[0].currentshoesmallpictures.map((shoe, index) => {
               return (
                 <div className='indivAltMainShoeImg'>
                   <img
@@ -88,7 +88,7 @@ class MainShoe extends React.Component {
             </div>
           </div>
           <div className="mainShoeAlternateImgs">
-            {this.props.shoeData[0].currentShoeSmallPictures.map((shoe, index) => {
+            {this.props.shoeData[0].currentshoesmallpictures.map((shoe, index) => {
               return (
                 <div className='indivAltMainShoeImg'>
                   <img id={index} onClick={this.alternateViewClickAllShoeData} src={shoe} />
@@ -104,11 +104,11 @@ class MainShoe extends React.Component {
         <div>
           <div className="mainShoeDiv" >
             <div className='mainShoeImg'>
-              <img src={this.props.oneShoeData[0].currentShoeBigPictures[0]} />
+              <img src={this.props.oneShoeData[0].currentshoebigpictures[0]} />
             </div>
           </div>
           <div className="mainShoeAlternateImgs">
-            {this.props.oneShoeData[0].currentShoeSmallPictures.map((shoe, index) => {
+            {this.props.oneShoeData[0].currentshoesmallpictures.map((shoe, index) => {
               return (
                 <div className='indivAltMainShoeImg'>
                   <img
@@ -125,11 +125,11 @@ class MainShoe extends React.Component {
         <div>
           <div className="mainShoeDiv" >
             <div className='mainShoeImg'>
-              <img src={this.props.shoeData[0].currentShoeBigPictures[0]} />
+              <img src={this.props.shoeData[0].currentshoebigpictures[0]} />
             </div>
           </div>
           <div className="mainShoeAlternateImgs">
-            {this.props.shoeData[0].currentShoeSmallPictures.map((shoe, index) => {
+            {this.props.shoeData[0].currentshoesmallpictures.map((shoe, index) => {
               return (
                 <div className='indivAltMainShoeImg'>
                   <img id={index} onClick={this.alternateViewClickAllShoeData} src={shoe} />

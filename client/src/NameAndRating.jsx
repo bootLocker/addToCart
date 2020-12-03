@@ -6,7 +6,7 @@ const NameAndRating = (props) => {
     return (
       <div>
         <div className="shoeName1">
-          <h1 > {props.oneShoeData[0].shoeName} </h1>
+          <h1 > {props.oneShoeData[0].shoename} </h1>
         </div>
 
         <div id="gender1">
@@ -26,7 +26,7 @@ const NameAndRating = (props) => {
     return (
       <div>
         <div className="shoeName1">
-          <h1 > {props.shoeData[0].shoeName} </h1>
+          <h1 > {props.shoeData[0].shoename} </h1>
         </div>
 
         <div id="gender1">
