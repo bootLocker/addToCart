@@ -3,103 +3,99 @@ const mongoose = require('mongoose');
 
 let data = [
   {
-    shoeName: 'adidas D.O.N. ISSUE #2',
+    shoename: 'adidas D.O.N. ISSUE #2',
     gender: 'Men\'s',
-    SKU: 'FU7385',
     price: '$100.00',
     size:
       [7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18],
-    currentShoeBigPictures:
+    currentshoebigpictures:
       ['https://images.footlocker.com/is/image/EBFL2/FU7385_a1?wid=630&hei=630&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FU7385_a2?wid=630&hei=630&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FU7385_a3?wid=630&hei=630&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FU7385_a4?wid=630&hei=630&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FU7385_a5?wid=630&hei=630&fmt=png-alpha'],
-    currentShoeSmallPictures: [
+    currentshoesmallpictures: [
       'https://images.footlocker.com/is/image/EBFL2/FU7385_a1?wid=56&hei=56&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FU7385_a2?wid=56&hei=56&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FU7385_a3?wid=56&hei=56&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FU7385_a4?wid=56&hei=56&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FU7385_a5?wid=56&hei=56&fmt=png-alpha'
     ],
-    otherColorWays:
+    othercolorways:
       ['https://images.footlocker.com/is/image/EBFL2/FU7385?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FW8518?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FV8961?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FW8517?wid=185&hei=185&fmt=png-alpha'],
     colorway: 'Mitchell, Donovan | Glory Mint/Signal Green/Solar Red',
     fit: 'Width : Width - D - Medium',
-    fitAlert:
+    fitalert:
       'Fit Alert: Item runs true to size. We suggest you order your normal size.',
     rating: 3
   },
   {
-    shoeName: 'adidas D.O.N. ISSUE #2',
+    shoename: 'adidas D.O.N. ISSUE #2',
     gender: 'Men\'s',
-    SKU: 'FW8518',
     price: '$110.00',
     size:
       [7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18],
-    currentShoeBigPictures:
+    currentshoebigpictures:
       ['https://images.footlocker.com/is/image/EBFL2/FW8518_a1?wid=630&hei=630&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FW8518_a2?wid=630&hei=630&fmt=png-alpha'],
-    currentShoeSmallPictures: [
+    currentshoesmallpictures: [
       'https://images.footlocker.com/is/image/EBFL2/FW8518_a1?wid=56&hei=56&fmt=png-alpha', 'https://images.footlocker.com/is/image/EBFL2/FW8518_a2?wid=56&hei=56&fmt=png-alpha'
     ],
-    otherColorWays:
+    othercolorways:
       ['https://images.footlocker.com/is/image/EBFL2/FW8518?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FU7385?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FV8961?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FW8517?wid=185&hei=185&fmt=png-alpha'],
     colorway: 'Solar Gold/Black/Solar Gold | Avail to ship early October',
     fit: 'Width : Width - D - Medium',
-    fitAlert:
+    fitalert:
       'Fit Alert: Item runs true to size. We suggest you order your normal size.',
     rating: 3
   },
   {
-    shoeName: 'adidas D.O.N. ISSUE #2',
+    shoename: 'adidas D.O.N. ISSUE #2',
     gender: 'Men\'s',
-    SKU: 'FV8961',
     price: '$110.00',
     size:
       [7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18],
-    currentShoeBigPictures: ['https://images.footlocker.com/is/image/EBFL2/FV8961_a1?wid=630&hei=630&fmt=png-alpha', 'https://images.footlocker.com/is/image/EBFL2/FV8961_a2?wid=630&hei=630&fmt=png-alpha'],
-    currentShoeSmallPictures: [
+    currentshoebigpictures: ['https://images.footlocker.com/is/image/EBFL2/FV8961_a1?wid=630&hei=630&fmt=png-alpha', 'https://images.footlocker.com/is/image/EBFL2/FV8961_a2?wid=630&hei=630&fmt=png-alpha'],
+    currentshoesmallpictures: [
       'https://images.footlocker.com/is/image/EBFL2/FV8961_a1?wid=56&hei=56&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FV8961_a2?wid=56&hei=56&fmt=png-alpha'
     ],
-    otherColorWays: ['https://images.footlocker.com/is/image/EBFL2/FV8961?wid=185&hei=185&fmt=png-alpha',
+    othercolorways: ['https://images.footlocker.com/is/image/EBFL2/FV8961?wid=185&hei=185&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FW8518?wid=185&hei=185&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FU7385?wid=185&hei=185&fmt=png-alpha',
       'https://images.footlocker.com/is/image/EBFL2/FW8517?wid=185&hei=185&fmt=png-alpha'],
     colorway: 'Power Pink/Black/Power Pink',
     fit: 'Width : Width - D - Medium',
-    fitAlert:
+    fitalert:
       'Fit Alert: Item runs true to size. We suggest you order your normal size.',
     rating: 3
   },
   {
-    shoeName: 'adidas D.O.N. ISSUE #2',
+    shoename: 'adidas D.O.N. ISSUE #2',
     gender: 'Men\'s',
-    SKU: 'FW8517',
     price: '$110.00',
     size:
       [7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 16, 17, 18],
-    currentShoeBigPictures:
+    currentshoebigpictures:
       ['https://images.footlocker.com/is/image/EBFL2/FW8517_a1?wid=630&hei=630&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FW8517_a2?wid=630&hei=630&fmt=png-alpha'],
-    currentShoeSmallPictures: [
+    currentshoesmallpictures: [
       'https://images.footlocker.com/is/image/EBFL2/FW8517_a1?wid=56&hei=56&fmt=png-alpha', 'https://images.footlocker.com/is/image/EBFL2/FW8517_a2?wid=56&hei=56&fmt=png-alpha'
     ],
-    otherColorWays:
+    othercolorways:
       ['https://images.footlocker.com/is/image/EBFL2/FW8517?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FW8518?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FV8961?wid=185&hei=185&fmt=png-alpha',
         'https://images.footlocker.com/is/image/EBFL2/FU7385?wid=185&hei=185&fmt=png-alpha'],
     colorway: 'Signal Cyan/Black/Signal Cyan',
     fit: 'Width : Width - D - Medium',
-    fitAlert:
+    fitalert:
       'Fit Alert: Item runs true to size. We suggest you order your normal size.',
     rating: 3
   }
@@ -741,10 +737,10 @@ let data = [
 
 addToCart.remove({})
   .then((results) => {
-    console.log('seeded succesful');
+    console.log('removal succesful');
   }).then(
     () => {
-      addToCart.create(data)
+      addToCart.create()
         .then((results) => {
           console.log('seeded succesful');
           mongoose.connection.close();

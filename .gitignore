@@ -1,6 +1,8 @@
 ## MAC files ##
 .DS_Store
-
+*.pem
+*.csv
+*.json
 ## NPM ##
 npm
 npm-debug.log
