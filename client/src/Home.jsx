@@ -30,6 +30,7 @@ class Home extends React.Component {
   getData() {
     axios.get('/api/products/')
       .then((results) => {
+        console.log(results.data);
         this.setState({
           shoeData: results.data
         }, () => console.log(this.state.shoeData));

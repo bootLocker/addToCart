@@ -50,7 +50,7 @@ class Colorways extends React.Component {
         <div id="otherColorwaysImgs">
           {this.props.shoeData[0].otherColorWays.map((shoe, index) => {
             return (
-              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[1]._id : index === 2 ? this.props.shoeData[2]._id : this.props.shoeData[3]._id} onClick={this.selectShoeColor} className={index === parseInt(this.state.id) ? 'otherShoesBackgroundClicked' : 'otherShoesBackground'} src={shoe} />
+              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor} className={index === parseInt(this.state.id) ? 'otherShoesBackgroundClicked' : 'otherShoesBackground'} src={shoe} />
             );
           })}
         </div>
@@ -61,7 +61,7 @@ class Colorways extends React.Component {
         <div id="otherColorwaysImgs">
           {this.props.shoeData[0].otherColorWays.map((shoe, index) => {
             return (
-              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[1]._id : index === 2 ? this.props.shoeData[2]._id : this.props.shoeData[3]._id} onClick={this.selectShoeColor} className='otherShoesBackground' src={shoe} />
+              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor} className='otherShoesBackground' src={shoe} />
             );
           })}
         </div>
