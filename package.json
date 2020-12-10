@@ -21,6 +21,7 @@
     "fast-csv": "^4.3.5",
     "mongoose": "^5.10.14",
     "morgan": "^1.10.0",
+    "newrelic": "^7.0.2",
     "nodemon": "^2.0.6",
     "pg": "^8.5.1",
     "puppeteer": "^5.4.1",

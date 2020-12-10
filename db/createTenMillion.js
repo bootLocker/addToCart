@@ -1,9 +1,9 @@
 var fs = require('fs');
-// fs.writeFile('./db/10,000,000Shoes.csv', 'shoeName|gender|price|size|currentShoeBigPictures|currentShoeSmallPictures|otherColorWays|colorway|fit|fitAlert|rating\n', (err) => {
+// fs.writeFile('./db/tenMillion.csv', 'shoeName|gender|price|size|currentShoeBigPictures|currentShoeSmallPictures|otherColorWays|colorway|fit|fitAlert|rating\n', (err) => {
 //   if (err) { throw err; }
 //   console.log('file overwritten');
 // });
-var ws = fs.createWriteStream('./db/10,000,000Shoes.csv', { flags: 'a' });
+var ws = fs.createWriteStream('./db/tenMillion.csv', { flags: 'a' });
 let fastcsv = require('fast-csv');
 
 
@@ -90,6 +90,6 @@ var createRandomShoes = (amount) => {
 
 for(var i = 0; i < 10; i++){
   createRandomShoes(100000);
-  console.log(100000);
+  console.log(i);
 }
 ws.end();

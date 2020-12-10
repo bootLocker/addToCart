@@ -28,7 +28,7 @@ let createTable = `CREATE TABLE products(
 let addRow = `
 COPY products(
   shoeName,gender,price,size,currentShoeBigPictures,currentShoeSmallPictures,otherColorWays,colorway,fit,fitAlert,rating)
-FROM '/home/mylonjones/hackreactor/addToCart/db/10,000,000Shoes.csv'
+FROM '/home/mylonjones/hackreactor/postgresTest/addToCart/db/tenMillion.csv'
 DELIMITER '|'
 CSV HEADER;
 `;
