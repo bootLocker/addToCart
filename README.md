@@ -1,39 +1,5 @@
-# Project Name
+Hello poor souls who inherit my code.
 
-> Project description
+Just a heads up, i only have 4 actual pieces of data in my db and have commented out the rest. I did this because I had to go back and manually select high quality images of the shoes after realizing I had only grabbed small images and didn't feel like doing it for all of them. I also have a bug found in my colorways.jsx in the front end that after a click on a new colorways shoe and switching between its views, the next time you choose a different colorway, it will not change main shoe image, only the alterior views found below it. I also have a css file in my src only because I wanted to have a copy of it when I pushed to github since I had my entire dist folder git ignored. You can ignore that file.
 
-## Related Projects
-
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-
-## Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-
-## Usage
-
-> Some usage instructions
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install -g webpack
-npm install
-```
-
+Otherwise, there shouldn't be any other issues besides some css. Feel free to reach out if you're running into serious errors. (:

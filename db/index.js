@@ -11,17 +11,16 @@ mongoose.connect('mongodb://localhost:/addToCart', { useNewUrlParser: true, useU
   });
 
 const addToCartSchema = mongoose.Schema({
-  shoeName: { type: String },
+  shoename: { type: String },
   gender: { type: String },
-  SKU: { type: String },
   price: { type: String },
   size: [{ type: Number }],
-  currentShoeBigPictures: [{ type: String }],
-  currentShoeSmallPictures: [{ type: String }],
-  otherColorWays: [{ type: String }],
+  currentshoebigpictures: [{ type: String }],
+  currentshoesmallpictures: [{ type: String }],
+  othercolorways: [{ type: String }],
   colorway: { type: String },
   fit: { type: String },
-  fitAlert: { type: String},
+  fitalert: { type: String},
   rating: { type: Number }
 });
 
