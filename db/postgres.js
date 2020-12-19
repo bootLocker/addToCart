@@ -3,10 +3,14 @@
 const { Client } = require('pg');
 const client = new Client({
   user: 'postgres',
+  host: '3.129.243.3',
   database: 'products',
   password: 'postgres',
 });
-client.connect();
+client.connect()
+  .catch((err) => {
+    console.error(err);
+  });
 
 //schema
 let createTable = `CREATE TABLE products(
@@ -28,8 +32,8 @@ let createTable = `CREATE TABLE products(
 let addRow = `
 COPY products(
   shoeName,gender,price,size,currentShoeBigPictures,currentShoeSmallPictures,otherColorWays,colorway,fit,fitAlert,rating)
-FROM '/home/mylonjones/hackreactor/postgresTest/addToCart/db/tenMillion.csv'
-DELIMITER '|'
+FROM '/home/mylonjones/hackreactor/postgresTest/addToCart/db/data.csv'
+with DELIMITER as '|'
 CSV HEADER;
 `;
 
@@ -39,6 +43,7 @@ CSV HEADER;
 // client.query(createTable, (err, res) => {
 // });
 // client.query(addRow, (err, res) => {
+//   console.log(addRow)
 //   console.log(err);
 // });
 client.query('SELECT $1::text as message', ['Hello world!'], (err, res) => {

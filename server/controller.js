@@ -1,5 +1,5 @@
-const shoeDisplay = require('../db/model.js');
-const db = require('../db/index.js');
+// const shoeDisplay = require('../db/model.js');
+// const db = require('../db/index.js');
 const pg = require('../db/postgres.js');
 
 const controller = {
@@ -86,7 +86,6 @@ const controller = {
     //     res.status(404).send(err);
     //   });
     pg.query(`SELECT * FROM products
-              WHERE _id > 9000000
               LIMIT 4`)
       .then((results) => {
         res.status(200).send(results.rows);

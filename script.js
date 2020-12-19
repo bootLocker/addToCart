@@ -11,7 +11,7 @@ export default function () {
   const T = 6;
 
   for (let i = 0; i < 11; i++) {
-    http.get('http://localhost:3001/api/products/');
+    http.get('http://localhost:3000/api/products/');
   }
 
   const after = new Date().getTime();

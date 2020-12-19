@@ -88,7 +88,7 @@ var createRandomShoes = (amount) => {
   }
 };
 
-for(var i = 0; i < 10; i++){
+for(var i = 0; i < 25; i++){
   createRandomShoes(100000);
   console.log(i);
 }

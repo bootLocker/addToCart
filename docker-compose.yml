@@ -7,4 +7,4 @@ services:
     ports:
     - '3001:3001'
   database:
-    image: mongo:latest
+    image: postgres:latest
