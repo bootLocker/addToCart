@@ -122,7 +122,7 @@ class MainShoe extends React.Component {
     }
     if (this.props.shoeData && this.props.shoeData.length > 0) {
       return (
-        <div>
+        <div className='mainShoeDivWithAltImages'>
           <div className="mainShoeDiv" >
             <div className='mainShoeImg'>
               <img src={this.props.shoeData[0].currentShoeBigPictures[0]} />

@@ -58,10 +58,10 @@ class Colorways extends React.Component {
     }
     if (this.props.shoeData && this.props.shoeData.length > 0) {
       return (
-        <div id="otherColorwaysImgs">
+        <div className="otherColorwaysDiv">
           {this.props.shoeData[0].otherColorWays.map((shoe, index) => {
             return (
-              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor} className='otherShoesBackground' src={shoe} />
+              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor} className='otherColorwaysImgs' src={shoe} />
             );
           })}
         </div>
