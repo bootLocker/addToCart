@@ -9,6 +9,8 @@ class MainShoe extends React.Component {
     this.state = {
       clickedImage: '',
       soloClickedImage: '',
+      imageIndex: 0,
+      soloClickedImageIndex: 0
     };
     this.alternateViewClickAllShoeData = this.alternateViewClickAllShoeData.bind(this);
     this.alternateViewClickOneShoe = this.alternateViewClickOneShoe.bind(this);
@@ -75,7 +77,7 @@ class MainShoe extends React.Component {
         <div>
           <div className="mainShoeDiv" >
             <div className='mainShoeImg'>
-              <img src={this.props.oneShoeData[0].currentShoeBigPictures[this.state.imageIndex]} />
+              <img src={this.state.imageIndex > this.props.oneShoeData[0].currentShoeBigPictures.length ? this.props.oneShoeData[0].currentShoeBigPictures[0] : this.props.oneShoeData[0].currentShoeBigPictures[this.state.imageIndex]} />
             </div>
           </div>
           <div className="mainShoeAlternateImgs">
@@ -163,5 +165,3 @@ class MainShoe extends React.Component {
 }
 
 export default MainShoe;
-
-

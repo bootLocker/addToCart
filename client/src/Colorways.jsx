@@ -7,27 +7,21 @@ class Colorways extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicked: false,
-      id: '',
+      id: 0,
       _id: '',
       newShoe: []
     };
     this.selectShoeColor = this.selectShoeColor.bind(this);
     this.get = this.get.bind(this);
-    // this.getNewShoeData = this.getNewShoeData.bind(this);
   }
-
-  // componentDidMount() {
-  //   this.getNewShoeData();
-  // }
 
 
 
   selectShoeColor(e) {
-    console.log(e.currentTarget.name);
+    // console.log('id', e.currentTarget.id);
+
     this.setState({
-      id: e.target.id,
-      // clicked: !this.state.clicked,
+      id: e.currentTarget.id,
       _id: e.currentTarget.name
     }, () => this.get());
   }
@@ -36,7 +30,8 @@ class Colorways extends React.Component {
     axios.get(`api/products/${this.state._id}`)
       .then((results) => {
         this.setState({
-          newShoe: results.data
+          newShoe: results.data,
+          // chosenShoeIndex:
         }, () => this.props.getShoe(this.state.newShoe));
       })
       .catch((err) => {
@@ -50,7 +45,9 @@ class Colorways extends React.Component {
         <div className="otherColorwaysDiv">
           {this.props.shoeData[0].otherColorWays.map((shoe, index) => {
             return (
-              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor} className='otherColorwaysImgs' src={shoe} />
+              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor}
+                className={index === this.state.id ? 'otherColorwaysImgsClicked' : 'otherColorwaysImgs'}
+                src={shoe} />
             );
           })}
         </div>

@@ -153,6 +153,22 @@ text-decoration: underline;
   padding: 5px;
 }
 
+.otherColorwaysImgsClicked {
+  line-height: 0;
+  padding: 0.5rem 0;
+  background: whitesmoke;
+  border: 1px solid whitesmoke;
+  z-index: auto;
+  margin-right: 2%;
+  display: inline-flex;
+  flex-shrink: 2;
+  margin-top: 4%;
+  width: 20%;
+  height: 16%;
+  padding: 5px;
+  border-bottom: 5px solid red;
+}
+
 .otherColorwaysImgs:hover {
   cursor: pointer;
   border: 1px solid #dddddd;
