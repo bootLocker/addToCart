@@ -47,8 +47,6 @@ class Home extends React.Component {
   }
 
 
-  // add conditional if this.state.oneshoedata.size is valid then pass that it in as props to each component and add conditionals to those to see if this.props.oneshoedata is true and adjust each index
-
   render() {
     if (this.state.oneShoeData && this.state.oneShoeData.length > 0) {
       return (

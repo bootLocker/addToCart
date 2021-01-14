@@ -9,21 +9,14 @@ body {
   border: 1px solid #dddddd;
   margin-bottom: 1rem;
   display: flex;
-  padding-top: 10px;
   padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 12px;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 1%;
-  /* margin-bottom: 10%; */
   box-sizing: border-box;
 }
 
-
-/* #leftPortion {
- position: relative;
-  display: flex;
-} */
 
 #rightPortion {
   margin-left: 2%;
@@ -54,8 +47,6 @@ body {
 }
 
 .mainShoeDiv {
-  /* line-height: 0; */
-  /* padding: 0.5rem 0; */
   position: relative;
   background: whitesmoke;
   border-radius: 0;
@@ -63,7 +54,6 @@ body {
   z-index: auto;
   width: 750px;
   height: 550px;
-  /* padding: 8px; */
   margin-bottom: 1%;
   padding-bottom: 10%;
   margin-top: 2%;
@@ -88,7 +78,6 @@ body {
   border: 1px solid whitesmoke;
   z-index: auto;
   margin-right: 1%;
-  /* margin-left: -5px; */
   display: inline-flex;
 }
 
@@ -109,7 +98,6 @@ body {
 }
 
 #gender1 {
-  /* padding-top: -50px; */
   margin-top: -15px;
   font: 0.875rem/1.33333 Roboto, Arial, sans-serif;
   color: #515151;
@@ -127,7 +115,6 @@ body {
   text-decoration-color: #515151;
   color: #515151;
   filter: grayscale(100%);
-  /* opacity: .3; */
 }
 
 .starz1:hover {
@@ -154,7 +141,6 @@ text-decoration: underline;
 .otherColorwaysImgs {
   line-height: 0;
   padding: 0.5rem 0;
-  /* position: relative; */
   background: whitesmoke;
   border: 1px solid whitesmoke;
   z-index: auto;
@@ -172,35 +158,6 @@ text-decoration: underline;
   border: 1px solid #dddddd;
 }
 
-/* .otherShoesBackgroundClicked {
-  line-height: 0;
-  padding: 0.5rem 0;
-  position: relative;
-  background: whitesmoke;
-  border-radius: 0;
-  border: 1px solid whitesmoke;
-  margin-right: 2%;
-  display: inline-flex;
-  flex-shrink: 2;
-  margin-top: 4%;
-  /* background-color: red; */
-  border-bottom: solid red;
-  width: 80px;
-  height: 77px;
-  padding: 5px;
-} */
-
-
-
-/* .otherShoesBackgroundClicked:hover {
-  cursor: pointer;
-} */
-
-/* .otherShoesImage{
-  width: 90px;
-  height: 87px;
-  padding: 5px;
-} */
 
 .otherShoesImageClicked{
   width: 90px;

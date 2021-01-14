@@ -24,10 +24,10 @@ class Colorways extends React.Component {
 
 
   selectShoeColor(e) {
-    console.log(e.currentTarget.name)
+    console.log(e.currentTarget.name);
     this.setState({
       id: e.target.id,
-      clicked: !this.state.clicked,
+      // clicked: !this.state.clicked,
       _id: e.currentTarget.name
     }, () => this.get());
   }
@@ -45,17 +45,6 @@ class Colorways extends React.Component {
   }
 
   render() {
-    if (this.props.shoeData && this.props.shoeData.length > 0 && this.state.clicked) {
-      return (
-        <div id="otherColorwaysImgs">
-          {this.props.shoeData[0].otherColorWays.map((shoe, index) => {
-            return (
-              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor} className={index === parseInt(this.state.id) ? 'otherShoesBackgroundClicked' : 'otherShoesBackground'} src={shoe} />
-            );
-          })}
-        </div>
-      );
-    }
     if (this.props.shoeData && this.props.shoeData.length > 0) {
       return (
         <div className="otherColorwaysDiv">
