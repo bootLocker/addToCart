@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3001;
+// const port = 3001;
 const path = require('path');
 const bodyParser = require('body-parser');
 const router = require('./router.js');
@@ -12,6 +12,6 @@ app.use(morgan('dev'));
 app.use('/api', router);
 
 
-app.listen(port, () => {
-  console.log(`Boot Locker listening @ ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Boot Locker listening @ ${process.env.PORT}`);
 });

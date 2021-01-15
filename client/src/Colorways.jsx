@@ -9,7 +9,7 @@ class Colorways extends React.Component {
     this.state = {
       id: 0,
       _id: '',
-      newShoe: []
+      newShoe: [],
     };
     this.selectShoeColor = this.selectShoeColor.bind(this);
     this.get = this.get.bind(this);
@@ -18,8 +18,9 @@ class Colorways extends React.Component {
 
 
   selectShoeColor(e) {
-    // console.log('id', e.currentTarget.id);
 
+    // console.log(e.currentTarget.style)
+    // e.currentTarget.style.borderBottom = '5px solid red';
     this.setState({
       id: e.currentTarget.id,
       _id: e.currentTarget.name
@@ -41,12 +42,17 @@ class Colorways extends React.Component {
 
   render() {
     if (this.props.shoeData && this.props.shoeData.length > 0) {
+      console.log('state of id changing?', this.state.id)
       return (
         <div className="otherColorwaysDiv">
           {this.props.shoeData[0].otherColorWays.map((shoe, index) => {
             return (
-              <img id={index} name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor}
-                className={index === this.state.id ? 'otherColorwaysImgsClicked' : 'otherColorwaysImgs'}
+              <img id={index}
+                name={index === 0 ? this.props.shoeData[0]._id : index === 1 ? this.props.shoeData[2]._id : index === 2 ? this.props.shoeData[3]._id : this.props.shoeData[1]._id} onClick={this.selectShoeColor}
+
+                // why no work VVV
+
+                className='otherColorwaysImgs'
                 src={shoe} />
             );
           })}

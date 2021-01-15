@@ -72,11 +72,11 @@ class MainShoe extends React.Component {
 
     // clicking on alt view of othercolorway
     if (this.props.oneShoeData && this.state.soloClickedImage) {
-      console.log('soloclicked image')
       return (
         <div>
           <div className="mainShoeDiv" >
             <div className='mainShoeImg'>
+              {/* if the image index held in state is greater than number of images in array, just return the first */}
               <img src={this.state.imageIndex > this.props.oneShoeData[0].currentShoeBigPictures.length ? this.props.oneShoeData[0].currentShoeBigPictures[0] : this.props.oneShoeData[0].currentShoeBigPictures[this.state.imageIndex]} />
             </div>
           </div>

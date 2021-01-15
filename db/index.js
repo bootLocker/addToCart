@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost:/addToCart', { useNewUrlParser: true, useUnifiedTopology: true })
+
+const uri = `mongodb+srv://${process.env.mongoDbUser}:${process.env.mongoDbPass}@inkorporated.utm91.mongodb.net/${process.env.mongoDb}?retryWrites=true&w=majority`
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('connected to mongoose');
   })
