@@ -11,7 +11,8 @@
     "start": "npm run seed && nodemon server/index.js",
     "connect": "nodemon db/index.js",
     "seed": "node db/shoeData.js",
-    "build": "webpack --config webpack.config.js --watch"
+    "build": "webpack --config webpack.config.js --watch",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && webpack --config webpack.config.js"
   },
   "dependencies": {
     "axios": "^0.21.0",
