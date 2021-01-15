@@ -28,9 +28,7 @@
     "react-image-file-resizer": "^0.3.8",
     "react-stars": "^2.2.5",
     "react-transition-group": "^4.4.1",
-    "styled-components": "^5.2.1"
-  },
-  "devDependencies": {
+    "styled-components": "^5.2.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
