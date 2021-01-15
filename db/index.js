@@ -1,9 +1,14 @@
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
 
-const uri = `mongodb+srv://${process.env.mongoDbUser}:${process.env.mongoDbPass}@inkorporated.utm91.mongodb.net/${process.env.mongoDb}?retryWrites=true&w=majority`
+const uri = `mongodb+srv://${process.env.mongoDbUser}:${process.env.mongoDbPass}@cluster0.1zbiw.mongodb.net/${process.env.mongoDb}??retryWrites=true&w=majority`
+
+
+
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
