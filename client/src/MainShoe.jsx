@@ -9,7 +9,8 @@ class MainShoe extends React.Component {
     this.state = {
       clickedImage: '',
       soloClickedImage: '',
-      clicked: false
+      imageIndex: 0,
+      soloClickedImageIndex: 0
     };
     this.alternateViewClickAllShoeData = this.alternateViewClickAllShoeData.bind(this);
     this.alternateViewClickOneShoe = this.alternateViewClickOneShoe.bind(this);
@@ -34,7 +35,7 @@ class MainShoe extends React.Component {
 
     this.setState({
       clickedImage: image,
-      clicked: true
+      imageIndex: e.currentTarget.id
     });
   }
 
@@ -44,26 +45,39 @@ class MainShoe extends React.Component {
     let image = '';
     if (e.currentTarget.id === '0') {
       image = this.props.oneShoeData[0].currentShoeBigPictures[0];
-    } else {
+    }
+    if (e.currentTarget.id === '1') {
       image = this.props.oneShoeData[0].currentShoeBigPictures[1];
     }
+    if (e.currentTarget.id === '2') {
+      image = this.props.oneShoeData[0].currentShoeBigPictures[2];
+    }
+    if (e.currentTarget.id === '3') {
+      image = this.props.oneShoeData[0].currentShoeBigPictures[3];
+    }
+    if (e.currentTarget.id === '4') {
+      image = this.props.oneShoeData[0].currentShoeBigPictures[4];
+    }
+
     this.setState({
-      soloClickedImage: image
+      soloClickedImage: image,
+      imageIndex: e.currentTarget.id
     });
   }
 
-  // toggleClass(e) {
-  //   console.log(e.target);
-  // }
+
 
 
   render() {
-    if (this.props.oneShoeData && this.state.soloClickedImage !== '') {
+
+    // clicking on alt view of othercolorway
+    if (this.props.oneShoeData && this.state.soloClickedImage) {
+      console.log('soloclicked image')
       return (
         <div>
           <div className="mainShoeDiv" >
             <div className='mainShoeImg'>
-              <img src={this.state.soloClickedImage} />
+              <img src={this.state.imageIndex > this.props.oneShoeData[0].currentShoeBigPictures.length ? this.props.oneShoeData[0].currentShoeBigPictures[0] : this.props.oneShoeData[0].currentShoeBigPictures[this.state.imageIndex]} />
             </div>
           </div>
           <div className="mainShoeAlternateImgs">
@@ -79,26 +93,8 @@ class MainShoe extends React.Component {
         </div>
       );
     }
-    if (this.props.shoeData && this.props.shoeData.length > 0 && this.state.clickedImage !== '') {
-      return (
-        <div>
-          <div className="mainShoeDiv" >
-            <div className='mainShoeImg'>
-              <img src={this.state.clickedImage} />
-            </div>
-          </div>
-          <div className="mainShoeAlternateImgs">
-            {this.props.shoeData[0].currentShoeSmallPictures.map((shoe, index) => {
-              return (
-                <div className='indivAltMainShoeImg'>
-                  <img id={index} onClick={this.alternateViewClickAllShoeData} src={shoe} />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      );
-    }
+
+    // clicking on other colorway
     if (this.props.oneShoeData) {
       return (
         <div>
@@ -120,9 +116,34 @@ class MainShoe extends React.Component {
         </div>
       );
     }
+
+
+    // if alt view on original load is clicked
+    if (this.props.shoeData && this.props.shoeData.length > 0 && this.state.imageIndex > -1) {
+      return (
+        <div className='mainShoeDivWithAltImages'>
+          <div className="mainShoeDiv" >
+            <div className='mainShoeImg'>
+              <img src={this.props.shoeData[0].currentShoeBigPictures[this.state.imageIndex]} />
+            </div>
+          </div>
+          <div className="mainShoeAlternateImgs">
+            {this.props.shoeData[0].currentShoeSmallPictures.map((shoe, index) => {
+              return (
+                <div className='indivAltMainShoeImg'>
+                  <img id={index} onClick={this.alternateViewClickAllShoeData} src={shoe} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+
+    // loading original shoe
     if (this.props.shoeData && this.props.shoeData.length > 0) {
       return (
-        <div>
+        <div className='mainShoeDivWithAltImages'>
           <div className="mainShoeDiv" >
             <div className='mainShoeImg'>
               <img src={this.props.shoeData[0].currentShoeBigPictures[0]} />
@@ -144,5 +165,3 @@ class MainShoe extends React.Component {
 }
 
 export default MainShoe;
-
-

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  addtocart:
+    build: ./
+    depends_on:
+    - 'database'
+    ports:
+    - '3001:3001'
+  database:
+    image: mongo:latest

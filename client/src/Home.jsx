@@ -30,6 +30,7 @@ class Home extends React.Component {
   getData() {
     axios.get('/api/products/')
       .then((results) => {
+        console.log(results.data);
         this.setState({
           shoeData: results.data
         }, () => console.log(this.state.shoeData));
@@ -45,8 +46,6 @@ class Home extends React.Component {
     }, () => console.log('newshoestate', this.state.oneShoeData));
   }
 
-
-  // add conditional if this.state.oneshoedata.size is valid then pass that it in as props to each component and add conditionals to those to see if this.props.oneshoedata is true and adjust each index
 
   render() {
     if (this.state.oneShoeData && this.state.oneShoeData.length > 0) {

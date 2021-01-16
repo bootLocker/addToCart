@@ -1,4 +1,5 @@
 const addToCart = require('./index.js');
+const mongoose = require('mongoose');
 
 let data = [
   {
@@ -738,13 +739,14 @@ let data = [
 //   }
 // ];
 
-// addToCart.create(data)
-//   .then((results) => {
-//     console.log('seeded succesful');
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+addToCart.create(data)
+  .then((results) => {
+    console.log('seeded succesful');
+    mongoose.connection.close();
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 
 // addToCart.remove({})

@@ -12,7 +12,7 @@ class ShoeSizes extends React.Component {
 
   render() {
     return (
-      <div id="shoeSizes">
+      <div className="shoeSizes">
         {this.props.shoeData[3].size.map((size, index) => {
           return (
             <div className="size" key={index}>
